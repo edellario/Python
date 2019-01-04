@@ -25,3 +25,8 @@ def coder(message, offset):
             shift = (alpha.find(letter) - offset) % 26
             new = new + alpha[shift]
     print(new)
+
+#brute force
+for i in range(1,27):
+    print("offset: " + str(i))
+    print(decoder(message, i))
